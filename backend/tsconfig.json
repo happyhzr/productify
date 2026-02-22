@@ -12,8 +12,7 @@
         "forceConsistentCasingInFileNames": true // Prevents case-sensitivity bugs
     },
     "include": [
-        "src/**/*.ts",
-        "drizzle.config.ts"
+        "src/**/*.ts"
     ], // Which files to compile
     "exclude": [
         "node_modules"
