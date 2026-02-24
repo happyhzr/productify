@@ -1,4 +1,4 @@
-import { SignInButton, SignUpButton, useAuth } from "@clerk/clerk-react"
+import { SignInButton, SignUpButton, useAuth, UserButton } from "@clerk/clerk-react"
 import { Link } from "react-router"
 import { PlusIcon, ShoppingBagIcon, UserIcon } from "lucide-react"
 import ThemeSelector from "./ThemeSelector"
