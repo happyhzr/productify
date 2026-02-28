@@ -5,9 +5,11 @@ import { clerkMiddleware } from "@clerk/express";
 import userRoutes from "./routes/userRoutes"
 import productRoutes from "./routes/productRoutes"
 import commentRoutes from "./routes/commentRoutes"
+import morgan from "morgan"
 
 const app = express()
 
+app.use(morgan('dev'));
 app.use(cors({ origin: ENV.FRONTEND_URL, credentials: true }))
 app.use(clerkMiddleware())
 app.use(express.json())
